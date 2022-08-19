@@ -9,20 +9,20 @@ local Tab = Window:MakeTab({
 })
 
 local Section = Tab:AddSection({
-	Name = "Bypass Mukuro Hub"
+	Name = "Principal"
 })
 
 Tab:AddButton({
-	Name = "Ren Hub (1)",
+	Name = "Mukuro Hub",
 	Callback = function()
-      		loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/bloxfruit/main/free'))()
+      		loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
   	end    
 })
 
 Tab:AddButton({
-	Name = "Mukuro Hub (2)",
+	Name = "Ren Hub",
 	Callback = function()
-      		loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/bloxfruit/main/free'))()
   	end    
 })
 
