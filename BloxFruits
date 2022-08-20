@@ -26,4 +26,15 @@ Tab:AddButton({
   	end    
 })
 
+local Section = Tab:AddSection({
+	Name = "Aimbot"
+})
+
+Tab:AddButton({
+	Name = "Universal Aim Silent",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Averiias/Universal-SilentAim/main/main.lua"))()
+  	end    
+})
+
 OrionLib:Init()
