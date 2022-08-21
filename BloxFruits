@@ -20,6 +20,13 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
+	Name = "String V2",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/StringV2/StringHub/main/BF.txt", true))()
+  	end    
+})
+
+Tab:AddButton({
 	Name = "Ren Hub",
 	Callback = function()
       		loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/bloxfruit/main/free'))()
