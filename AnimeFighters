@@ -7,6 +7,10 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+local Section = Tab:AddSection({
+	Name = "Hubs"
+})
+
 Tab:AddButton({
 	Name = "Zer0 Hub",
 	Callback = function()
@@ -20,3 +24,9 @@ Tab:AddButton({
       		loadstring(game.HttpGet(game, "https://raw.githubusercontent.com/KiJinGaming/FreeScript/main/KJHub.lua"))()
   	end    
 })
+
+local Section = Tab:AddSection({
+	Name = "Verdades"
+})
+
+Tab:AddLabel("Felipe, o mais negro de Cianorte região")
