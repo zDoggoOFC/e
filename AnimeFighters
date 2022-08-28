@@ -29,4 +29,16 @@ local Section = Tab:AddSection({
 	Name = "Verdades"
 })
 
-Tab:AddLabel("Felipe, o mais negro de Cianorte região")
+
+
+local Tab1 = Window:MakeTab({
+	Name = "Verdades",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+Tab1:AddLabel("Felipe, o mais negro de Cianorte região")
+Tab1:AddLabel("Felipe, o mais macaco negro.")
+Tab1:AddLabel("Mikaela, a mais degraçada preta.")
+Tab1:AddLabel("Mikaela, a mais nigga maldita.")
