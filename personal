@@ -1,4 +1,18 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Personal Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Personal Hub"})
+
+OrionLib:MakeNotification({
+	Name = "Password System",
+	Content = "Welcome to the Password System!",
+	Image = "rbxassetid://4483345998",
+	Time = 3
+})
+
+_G.Key = "2523"
+_G.KeyInput = "string"
+
+function MakeScriptHub()
+	local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 local Window = OrionLib:MakeWindow({Name = "Script Personal", HidePremium = false, SaveConfig = false, ConfigFolder = "OrionTest"})
 
@@ -44,8 +58,53 @@ Hubs:AddButton({
 })
 
 
+OrionLib:Init()
+end
+OrionLib:Init()
 
+function CorrectKeyNotification()
+	OrionLib:MakeNotification({
+		Name = "Correct Password!",
+		Content = "You have entered the correct key!",
+		Image = "rbxassetid://4483345998",
+		Time = 3
+	})
+end
 
+function IncorrectKeyNotification()
+	OrionLib:MakeNotification({
+		Name = "Incorrect Password!",
+		Content = "You have entered the incorrect key!",
+		Image = "rbxassetid://4483345998",
+		Time = 3
+	})
+end
 
+local Tab = Window:MakeTab({
+	Name = "Password",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddTextbox({
+	Name = "Enter Password",
+	Default = "",
+	TextDisappear = false,
+	Callback = function(Value)
+		_G.KeyInput = Value
+	end	  
+})
+
+Tab:AddButton({
+	Name = "Check Password",
+	Callback = function()
+      	if _G.KeyInput == _G.Key then
+		MakeScriptHub()
+		CorrectKeyNotification()
+		else
+			IncorrectKeyNotification()
+		  end
+  	end
+})
 
 OrionLib:Init()
