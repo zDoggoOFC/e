@@ -1,0 +1,48 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Script Personal", HidePremium = false, SaveConfig = false, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Doors"
+})
+
+Tab:AddButton({
+	Name = "Vynixius",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
+  	end    
+})
+
+local Hubs = Window:MakeTab({
+	Name = "Hubs",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+Hubs:AddButton({
+	Name = "Blox Fruits",
+	Callback = function()
+      		loadstring(game:HttpGet("raw.githubusercontent.com/zDoggoOFC/e/main/BloxFruits"))()
+  	end    
+})
+
+Hubs:AddButton({
+	Name = "Anime Fighters",
+	Callback = function()
+      		loadstring(game:HttpGet("raw.githubusercontent.com/zDoggoOFC/e/main/AnimeFighters"))()
+  	end    
+})
+
+
+
+
+
+
+OrionLib:Init()
