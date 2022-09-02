@@ -25,10 +25,6 @@ Tab:AddButton({
   	end    
 })
 
-local Section = Tab:AddSection({
-	Name = "Verdades"
-})
-
 
 
 local Tab1 = Window:MakeTab({
