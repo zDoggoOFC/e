@@ -1,5 +1,4 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-
 local Window = OrionLib:MakeWindow({Name = "Blox Fruits Hub", HidePremium = false, SaveConfig = false, ConfigFolder = "OrionTest"})
 
 local Tab = Window:MakeTab({
@@ -41,6 +40,17 @@ Tab:AddButton({
 	Name = "Universal Aim Silent",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Averiias/Universal-SilentAim/main/main.lua"))()
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Personal Hub"
+})
+
+Tab:AddButton({
+	Name = "Personal Hub",
+	Callback = function()
+      		loadstring(game:HttpGet(('raw.githubusercontent.com/zDoggoOFC/e/main/personal')))()
   	end    
 })
 
