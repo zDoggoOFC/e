@@ -25,6 +25,16 @@ Tab:AddButton({
   	end    
 })
 
+local Section = Tab:AddSection({
+	Name = "Personal Hub"
+})
+
+Tab:AddButton({
+	Name = "Personal Hub",
+	Callback = function()
+      		loadstring(game:HttpGet(('raw.githubusercontent.com/zDoggoOFC/e/main/personal')))()
+  	end    
+})
 
 
 local Tab1 = Window:MakeTab({
