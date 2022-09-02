@@ -25,6 +25,9 @@ local Hubs = Window:MakeTab({
 	PremiumOnly = false
 })
 
+local Section = Hubs:AddSection({
+	Name = "My Scripts"
+})
 
 Hubs:AddButton({
 	Name = "Blox Fruits",
