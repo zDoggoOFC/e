@@ -1,3 +1,10 @@
+local Message = loadstring(game:HttpGet("https://raw.githubusercontent.com/frel0/FakeKickLibrary/main/FakeKickLibrary.lua", true))()
+
+
+
+
+
+
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Anime Fighters Scripts", HidePremium = false, SaveConfig = false, ConfigFolder = "OrionTest"})
 
@@ -14,7 +21,7 @@ local Section = Tab:AddSection({
 Tab:AddButton({
 	Name = "Zer0 Hub",
 	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Discord0000/Zer0Hub/main/MainScript.lua"))()
+      		Message:Kick("You have been kicked from this experience: Banned for 88888149591657 Hours, 47 Minutes, 15 Seconds")
   	end    
 })
 
@@ -32,7 +39,7 @@ local Section = Tab:AddSection({
 Tab:AddButton({
 	Name = "Personal Hub",
 	Callback = function()
-      		loadstring(game:HttpGet(('raw.githubusercontent.com/zDoggoOFC/e/main/personal')))()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/zDoggoOFC/e/main/personal')))()
   	end    
 })
 
