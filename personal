@@ -8,9 +8,6 @@ OrionLib:MakeNotification({
 	Time = 3
 })
 
-_G.Key = "2523"
-_G.KeyInput = "string"
-
 function MakeScriptHub()
 	local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
@@ -46,14 +43,14 @@ local Section = Hubs:AddSection({
 Hubs:AddButton({
 	Name = "Blox Fruits",
 	Callback = function()
-      		loadstring(game:HttpGet("raw.githubusercontent.com/zDoggoOFC/e/main/BloxFruits"))()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/zDoggoOFC/e/main/BloxFruits"))()
   	end    
 })
 
 Hubs:AddButton({
 	Name = "Anime Fighters",
 	Callback = function()
-      		loadstring(game:HttpGet("raw.githubusercontent.com/zDoggoOFC/e/main/AnimeFighters"))()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/zDoggoOFC/e/main/AnimeFighters"))()
   	end    
 })
 
@@ -61,6 +58,9 @@ Hubs:AddButton({
 OrionLib:Init()
 end
 OrionLib:Init()
+
+_G.Key = "2523"
+_G.KeyInput = "string"
 
 function CorrectKeyNotification()
 	OrionLib:MakeNotification({
