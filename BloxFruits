@@ -50,7 +50,7 @@ local Section = Tab:AddSection({
 Tab:AddButton({
 	Name = "Personal Hub",
 	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/zDoggoOFC/e/main/personal"))()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/zDoggoOFC/e/main/personal')))()
   	end    
 })
 
