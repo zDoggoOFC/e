@@ -55,9 +55,50 @@ Hubs:AddButton({
 })
 
 
-OrionLib:Init()
+local Others = Window:MakeTab({
+	Name = "Others",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Others:AddSection({
+	Name = "Admins"
+})
+
+Others:AddButton({
+	Name = "Infinite Yield",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+  	end    
+})
+
+Others:AddButton({
+	Name = "CMD-X",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
+  	end    
+})
+
+local Section = Others:AddSection({
+	Name = "Remote Spy"
+})
+
+Others:AddButton({
+	Name = "Hydroxide",
+	Callback = function()
+	local owner = "Upbolt"
+	local branch = "revision"
+
+	local function webImport(file)
+    	return loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/%s/Hydroxide/%s/%s.lua"):format(owner, branch, file)), file .. '.lua')()
+	end
+
+	webImport("init")
+	webImport("ui/main")
+  		end    
+})
+
 end
-OrionLib:Init()
 
 _G.Key = "2523"
 _G.KeyInput = "string"
